@@ -1,0 +1,4 @@
+cryptography
+feedparser==5.2.1
+python-crontab
+PyYAML

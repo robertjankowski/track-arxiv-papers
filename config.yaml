@@ -1,0 +1,11 @@
+email_to: "robjanw11@wp.pl"
+topics:
+- 'network geometry'
+- 'hyperbolic geometry'
+- 'random geometric graphs'
+- 'network dynamics'
+- 'graph curvature'
+category: "physics.soc-ph"
+subject: 'New papers from arXiv'
+last_n_days: 3
+max_results: 20

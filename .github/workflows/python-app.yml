@@ -1,0 +1,25 @@
+name: Send mail with papers
+
+on:
+  push:
+  schedule:
+    - cron:  '30 21 * * *'
+    
+jobs:
+  build:
+    env:
+      MAIL_KEY: ${{ secrets.MAIL_KEY }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.6.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.6.9
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Get papers
+      run: |
+        python track_arxiv_papers.py config.yaml

@@ -1,2 +1,1 @@
-# track-arxiv-papers
-track-arxiv-papers
+# Track arXiv papers
