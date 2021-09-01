@@ -15,7 +15,7 @@ BASE_URL = 'http://export.arxiv.org/api/query?'
 
 def get_password():
     f = Fernet(os.environ['MAIL_KEY'])
-    token = b'gAAAAABg-uPmxFifJKrHL8lCJirkAZai_sAoCp_zs8HC4sfiTMrArfy83JBiqjBZ-4zrP8tRU8OTIkwilAT5UkZQSNuPyA2R6ABaJ2oG0D94WWmDVjOpXfA='
+    token = b'gAAAAABhL5tJNWGQzTkpcMFpMg5rJK5nfzVxo_21BxHD2qKBVI7gv3keRDP-Mwzifm13LeMk10XRGvYoJheltsZOZSxLXM4ftC02ZXhqGXXLz9dvL39h6kU='
     password = f.decrypt(token)
     return password.decode("utf-8")
 
