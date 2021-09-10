@@ -22,4 +22,4 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Get papers
       run: |
-        python track_arxiv_papers.py config.yaml
+        chmod +x run.sh && ./run.sh
