@@ -20,4 +20,6 @@ last_n_days: 3 # get papers from the last X days
 max_results: 20 # limit number of papers
 ```
 
+Issues:
 
+- if you don't see any new mail, make sure that `papers.from.arxiv@wp.pl` address in on your whitelist
