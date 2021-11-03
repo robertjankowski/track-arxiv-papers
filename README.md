@@ -1,6 +1,6 @@
 # Track arXiv papers
 
-Simple tool which allows you to keep up with new publications. Feel free to add config file using pull request (PR). The github actions will every day send you a list of new publications (preprints) from your field from arxiv.org.
+Simple tool which allows you to keep up with new publications. Feel free to add a config file using pull request (PR). The github actions will send you a list of new publications (preprints) from your field from arxiv.org every day.
 
 
 Example config:
